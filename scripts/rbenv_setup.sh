@@ -7,5 +7,3 @@ if [ ! -e ~/.rbenv ]; then
   mkdir -p ~/.rbenv/plugins && cd ~/.rbenv/plugins
   git clone git://github.com/sstephenson/ruby-build.git
 fi
-
-source .bash_profile
