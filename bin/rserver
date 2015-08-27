@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+require 'webrick'
+srv = WEBrick::HTTPServer.new(
+  :BindAddress  => '0.0.0.0',
+  :Port         => (port = ARGV[0].to_i) == 0 ? 3000 : port,
+  :DocumentRoot => './'
+)
+trap(:INT){srv.shutdown}
+srv.start

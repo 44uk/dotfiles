@@ -1,0 +1,37 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+[*.md]
+indent_size = 4
+
+# http://google-styleguide.googlecode.com/svn/trunk/pyguide.html?showone=Indentation#Indentation
+[*.py]
+indent_style = space
+indent_size = 4
+
+# http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml
+[*.html]
+indent_style = space
+indent_size = 2
+
+# https://developer.mozilla.org/ja/docs/JavaScript_style_guide
+[*.js]
+indent_style = space
+indent_size = 2
+
+# http://www.php-fig.org/psr/psr-1/
+[*.php]
+indent_style = space
+indent_size = 4
+
+# http://shugo.net/ruby-codeconv/codeconv.html
+[*.rb]
+indent_style = space
+indent_size = 2
