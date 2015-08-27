@@ -32,11 +32,20 @@ NeoBundle 'thinca/vim-quickrun'
 
 NeoBundle 'mattn/emmet-vim'
 
+NeoBundle 'scrooloose/nerdcommenter.git'
+
+NeoBundle 'Align'
+
+NeoBundle 'tpope/vim-endwise'
+
+NeoBundle 'Townk/vim-autoclose'
+
 NeoBundle 'editorconfig/editorconfig-vim'
+let g:EditorConfig_verbose = 1
 
 NeoBundle 'Shougo/unite.vim'
-let g:unite_enable_start_insert=1
-let g:unite_source_history_yank_enable =1
+let g:unite_enable_start_insert = 0
+let g:unite_source_history_yank_enable = 1
 let g:unite_source_file_mru_limit = 64
 
 NeoBundle 'Shougo/neocomplcache'
