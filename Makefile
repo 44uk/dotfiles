@@ -7,5 +7,4 @@ init:
 	@$(foreach val, $(wildcard ./scripts/*.sh), bash $(val);)
 
 deploy:
-	@$(foreach val, $(DOTFILES_FILES), [ -f $(abspath $(val)) ] && mv $(abspath $(val)){,.old.`date +%Y%m%d%H%M%S`} ;)
 	@$(foreach val, $(DOTFILES_FILES), ln -sfnv $(abspath $(val)) $(HOME)/$(val);)

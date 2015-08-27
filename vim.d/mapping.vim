@@ -12,7 +12,7 @@ inoremap <C-d> <Del>
 inoremap <C-k> <Up>
 inoremap <C-l> <Right>
 inoremap <C-j> <Down>
-inoremap <C-h> <Left
+inoremap <C-h> <Left>
 
 " ウィンドウ移動
 nnoremap <C-k> <C-w>k
@@ -21,5 +21,5 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-h> <C-w>h
 
 " esc 連打でハイライト検索解除
-"noremap <Esc><Esc> :nohlsearch<Return><Esc
+noremap <Esc><Esc> :nohlsearch<Return><Esc>
 

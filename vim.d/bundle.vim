@@ -16,6 +16,23 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'tomasr/molokai'
 NeoBundle 'sjl/badwolf'
 
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'basyura/unite-rails'
+NeoBundle 'hail2u/vim-css3-syntax'
+NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'wavded/vim-stylus'
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'digitaltoad/vim-jade'
+NeoBundle 'slim-template/vim-slim'
+NeoBundle 'moll/vim-node'
+
+NeoBundle 'nathanaelkane/vim-indent-guides'
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=236
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=240
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_guide_size = 1
+
 NeoBundle 'scrooloose/syntastic'
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -47,6 +64,10 @@ NeoBundle 'Shougo/unite.vim'
 let g:unite_enable_start_insert = 0
 let g:unite_source_history_yank_enable = 1
 let g:unite_source_file_mru_limit = 64
+
+NeoBundle 'Shougo/vimfiler'
+let g:vimfiler_as_default_explorer = 1
+nnoremap ff :VimFiler<ENTER>
 
 NeoBundle 'Shougo/neocomplcache'
 let g:acp_enableAtStartup = 0
