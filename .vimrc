@@ -5,7 +5,7 @@ set runtimepath+=~/dotfiles/
 
 runtime! vim.d/options.vim
 runtime! vim.d/mapping.vim
-runtime! vim.d/bundle.vim
+"runtime! vim.d/bundle.vim
 runtime! vim.d/plugins.vim
-runtime! vim.d/color.vim
 runtime! vim.d/autocmd.vim
+runtime! vim.d/color.vim

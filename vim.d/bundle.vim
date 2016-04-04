@@ -2,10 +2,10 @@
 if 0 | endif
 
 if has('vim_starting')
-	if &compatible
-		set nocompatible
-	endif
-	set runtimepath+=~/.vim/bundle/neobundle.vim/
+  if &compatible
+    set nocompatible
+  endif
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 call neobundle#begin(expand('~/.vim/bundle/'))
 
@@ -16,21 +16,28 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'tomasr/molokai'
 NeoBundle 'sjl/badwolf'
 
+NeoBundle 'bling/vim-airline'
+let g:airline#extensions#tabline#enabled = 1
+
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'basyura/unite-rails'
+NeoBundle 'slim-template/vim-slim'
+
 NeoBundle 'hail2u/vim-css3-syntax'
-NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'wavded/vim-stylus'
+
+NeoBundle 'moll/vim-node'
+"NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'digitaltoad/vim-jade'
-NeoBundle 'slim-template/vim-slim'
-NeoBundle 'moll/vim-node'
+NeoBundle 'leshill/vim-json'
 
 NeoBundle 'nathanaelkane/vim-indent-guides'
-let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=236
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=240
 let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_auto_colors = 0
 let g:indent_guides_guide_size = 1
 
 NeoBundle 'scrooloose/syntastic'
@@ -77,15 +84,15 @@ let g:neocomplcache_min_syntax_length = 3
 let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 
 let g:neocomplcache_dictionary_filetype_lists = {
-	\ 'default' : ''
-	\ }
+  \ 'default' : ''
+  \ }
 
 inoremap <expr><C-g> neocomplcache#undo_completion()
 inoremap <expr><C-l> neocomplcache#complete_common_string()
 
 inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
 function! s:my_cr_function()
-	return neocomplcache#smart_close_popup() . "\<CR>"
+  return neocomplcache#smart_close_popup() . "\<CR>"
 endfunction
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"

@@ -20,6 +20,19 @@ alias tailf='tail -f'
 
 # tmux {
 alias ta='tmux attach'
+#
+
+# git {
+alias g='git'
+alias gst='git status'
+alias gci='git commit'
+alias gau='git add -u'
+alias ginit='git init && git ci -m"initialize repository with allow empty" --allow-empty'
+# }
+
+# docker {
+alias dk='docker'
+alias dkm='docker-machine'
 # }
 
 # Ruby on Rails {

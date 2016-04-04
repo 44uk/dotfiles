@@ -5,7 +5,7 @@ set history=1024
 set showcmd
 set incsearch
 set swapfile
-set number 
+set number
 set tabstop=2
 set shiftwidth=2
 set fileencoding=utf-8

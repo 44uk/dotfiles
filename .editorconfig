@@ -8,14 +8,6 @@ trim_trailing_whitespace = true
 indent_style = space
 indent_size = 2
 
-[*.md]
-indent_size = 4
-
-# http://google-styleguide.googlecode.com/svn/trunk/pyguide.html?showone=Indentation#Indentation
-[*.py]
-indent_style = space
-indent_size = 4
-
 # http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml
 [*.html]
 indent_style = space
@@ -35,3 +27,11 @@ indent_size = 4
 [*.rb]
 indent_style = space
 indent_size = 2
+
+# http://google-styleguide.googlecode.com/svn/trunk/pyguide.html?showone=Indentation#Indentation
+[*.py]
+indent_style = space
+indent_size = 4
+
+[*.md]
+indent_size = 4
