@@ -1,3 +1,4 @@
+" 英語キーボード用
 nnoremap ; :
 nnoremap : ;
 

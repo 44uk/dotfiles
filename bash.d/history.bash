@@ -9,3 +9,4 @@ shopt -u histappend
 export HISTFILESIZE=9999
 export HISTSIZE=9999
 export HISTIGNORE=pwd:ls:la:ll:fg:history:h
+

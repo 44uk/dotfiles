@@ -33,6 +33,7 @@ alias ginit='git init && git ci -m"initialize repository with allow empty" --all
 # docker {
 alias dk='docker'
 alias dkm='docker-machine'
+alias dkc='docker-compose'
 # }
 
 # Ruby on Rails {
@@ -46,3 +47,4 @@ alias bue='bundle exec'
 alias finder-show-dotfiles="defaults write com.apple.finder AppleShowAllFiles TRUE; killall Finder"
 alias finder-hide-dotfiles="defaults write com.apple.finder AppleShowAllFiles FALSE; killall Finder"
 # }
+
