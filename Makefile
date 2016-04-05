@@ -8,3 +8,4 @@ init:
 
 deploy:
 	@$(foreach val, $(DOTFILES_FILES), ln -sfnv $(abspath $(val)) $(HOME)/$(val);)
+

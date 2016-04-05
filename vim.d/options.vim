@@ -1,6 +1,4 @@
 " init all settings
-"set all&
-
 set history=1024
 set showcmd
 set incsearch
@@ -10,6 +8,7 @@ set tabstop=2
 set shiftwidth=2
 set fileencoding=utf-8
 set fileencodings=utf-8,cp932,euc-jp,ucs-2le,ucs-2
+set undodir=$HOME/.vim/undo
 set undofile
 set autoindent
 set ignorecase
@@ -21,4 +20,3 @@ set splitright
 set t_vb=
 set visualbell
 set noerrorbells
-"set paste
