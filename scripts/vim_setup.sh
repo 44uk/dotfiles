@@ -6,10 +6,7 @@
 ## }
 
 # vim dirs Setup {
-# mkdir -p ~/.vim/bundle
-# mkdir -p ~/.vim/plugin
-# mkdir -p ~/.vim/backup
-# mkdir -p ~/.vim/tmp
+mkdir -p ~/.vim/undo
 
 # echo '### cloning neobundle for vim...'
 # git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
