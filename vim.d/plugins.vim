@@ -15,16 +15,27 @@ Plug 'tomasr/molokai'
 Plug 'sjl/badwolf'
 
 " My Plugins here:
+Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
+Plug 'tpope/vim-bundler'
 Plug 'basyura/unite-rails'
 Plug 'slim-template/vim-slim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'wavded/vim-stylus'
+Plug 'pangloss/vim-javascript'
 Plug 'moll/vim-node'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'kchmck/vim-coffee-script'
 Plug 'digitaltoad/vim-jade'
 Plug 'leshill/vim-json'
+Plug 'stephpy/vim-yaml'
+Plug 'plasticboy/vim-markdown'
+Plug 'gregsexton/matchtag'
+Plug 'stanangeloff/php.vim'
+Plug 'dsawardekar/wordpress.vim'
+Plug 'chrisbra/csv.vim'
+Plug 'othree/html5.vim'
+Plug 'scrooloose/syntastic'
 
 Plug 'nathanaelkane/vim-indent-guides'
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=236
@@ -47,8 +58,8 @@ Plug 'mhinz/vim-startify'
 Plug 'thinca/vim-quickrun'
 Plug 'mattn/emmet-vim'
 Plug 'tyru/caw.vim'
-nmap <Leader>c <Plug>(caw:i:toggle)
-vmap <Leader>c <Plug>(caw:i:toggle)
+nmap <Leader>c <Plug>(caw:hatpos:toggle)
+vmap <Leader>c <Plug>(caw:hatpos:toggle)
 
 Plug 'Align'
 Plug 'tpope/vim-endwise'
