@@ -69,11 +69,9 @@ let g:EditorConfig_verbose = 0
 
 Plug 'AndrewRadev/switch.vim'
 let g:switch_mapping = "-"
-let g:switch_custom_definitions = {
-  \ '*': [
-  \   ['is', 'are']
-  \ ],
-  \ 'ruby,eruby,haml' : [
+
+autocmd FileType ruby,eruby,haml,slim let b:switch_custom_definitions =
+  \ [
   \   ['if', 'unless'],
   \   ['while', 'until'],
   \   ['.blank?', '.present?'],
@@ -82,11 +80,12 @@ let g:switch_custom_definitions = {
   \   ['.inject', '.delete_if'],
   \   ['.map', '.map!'],
   \   ['attr_accessor', 'attr_reader', 'attr_writer'],
-  \ ],
-  \ 'markdown' : [
-  \   ['[ ]', '[x]']
   \ ]
-  \ }
+
+autocmd FileType md let g:switch_custom_definitions =
+  \ [
+  \   {'[ ]', '[x]'}
+  \ ]
 
 Plug 'Shougo/unite.vim'
 let g:unite_enable_start_insert = 0
