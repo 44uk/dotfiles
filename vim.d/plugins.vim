@@ -67,6 +67,27 @@ Plug 'Townk/vim-autoclose'
 Plug 'editorconfig/editorconfig-vim'
 let g:EditorConfig_verbose = 0
 
+Plug 'AndrewRadev/switch.vim'
+let g:switch_mapping = "-"
+let g:switch_custom_definitions = {
+  \ '*': [
+  \   ['is', 'are']
+  \ ],
+  \ 'ruby,eruby,haml' : [
+  \   ['if', 'unless'],
+  \   ['while', 'until'],
+  \   ['.blank?', '.present?'],
+  \   ['include', 'extend'],
+  \   ['class', 'module'],
+  \   ['.inject', '.delete_if'],
+  \   ['.map', '.map!'],
+  \   ['attr_accessor', 'attr_reader', 'attr_writer'],
+  \ ],
+  \ 'markdown' : [
+  \   ['[ ]', '[x]']
+  \ ]
+  \ }
+
 Plug 'Shougo/unite.vim'
 let g:unite_enable_start_insert = 0
 let g:unite_source_history_yank_enable = 1
@@ -90,10 +111,13 @@ let g:neocomplete#sources#syntax#min_keyword_length = 3
 let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
 
 " Define dictionary.
+let $VIMDICTS = $HOME . '/dotfiles/vim.dicts/'
 let g:neocomplete#sources#dictionary#dictionaries = {
   \ 'default' : '',
   \ 'vimshell' : $HOME.'/.vimshell_hist',
-  \ 'scheme' : $HOME.'/.gosh_completions'
+  \ 'scheme' : $HOME.'/.gosh_completions',
+  \ 'ruby' : $VIMDICTS . 'ruby.dict',
+  \ 'jquery' : $VIMDICTS . 'jquery.dict',
   \ }
 
 " Define keyword.

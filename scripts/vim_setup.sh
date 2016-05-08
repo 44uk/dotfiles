@@ -8,9 +8,6 @@
 # vim dirs Setup {
 mkdir -p ~/.vim/undo
 
-# echo '### cloning neobundle for vim...'
-# git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
-
 # echo '### cloning plug for vim...'
 # https://github.com/junegunn/vim-plug
 #curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
