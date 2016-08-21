@@ -1,6 +1,9 @@
-function docker-machine-switch {
-  # docker-machine restart $1
+function docker-machine-env {
   eval $(docker-machine env $1)
 }
+alias dkmenv='docker-machine-env'
 
-alias dkmsw='docker-machine-switch'
+function docker-rmi-none {
+  docker images | awk '/<none/{print $3}' | xargs docker rmi
+}
+alias dkrmi='docker-rmi-none'

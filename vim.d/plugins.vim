@@ -37,6 +37,11 @@ Plug 'chrisbra/csv.vim'
 Plug 'othree/html5.vim'
 Plug 'scrooloose/syntastic'
 
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+" javascriptとJSXの2つのファイルタイプを指定する
+au BufRead,BufNewFile *.jsx set filetype=javascript.jsx
+
 Plug 'nathanaelkane/vim-indent-guides'
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=236
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=240

@@ -35,12 +35,6 @@ fi
 [ -e ~/.pythonbrew/etc/bashrc ] && source ~/.pythonbrew/etc/bashrc
 # }
 
-# Docker {
-if type docker-machine > /dev/null 2>&1; then
-  eval "$(docker-machine env default)"
-fi
-# }
-
 # Java {
 if [ -d /Library/Java/Home/ ]; then
   export JAVA_HOME=/Library/Java/Home/
