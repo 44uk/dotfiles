@@ -17,6 +17,7 @@ alias h='history'
 alias j='jobs -l'
 alias du='du -h'
 alias tailf='tail -f'
+alias less='less -qR'
 
 # tmux {
 alias ta='tmux attach'
@@ -27,7 +28,7 @@ alias g='git'
 alias gst='git status'
 alias gci='git commit'
 alias gau='git add -u'
-alias ginit='git init && git ci -m"initialize repository with allow empty" --allow-empty'
+alias ginit='git init && git ci -m"initialize repository with empty commit." --allow-empty'
 # }
 
 # docker {
