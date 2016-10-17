@@ -20,3 +20,4 @@ set splitright
 set t_vb=
 set visualbell
 set noerrorbells
+set nofoldenable
