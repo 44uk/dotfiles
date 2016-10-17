@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 cd $HOME
 if [ ! -e ~/.rbenv ]; then
   git clone git://github.com/sstephenson/rbenv.git .rbenv
