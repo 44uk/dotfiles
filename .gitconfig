@@ -32,6 +32,9 @@
 [pull]
 	rebase=true
 
+[rebase]
+	autostash=true
+
 [http]
 	sslVerify=false
 
