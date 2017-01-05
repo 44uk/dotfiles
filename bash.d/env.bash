@@ -36,9 +36,9 @@ fi
 # }
 
 # Java {
-if [ -d /Library/Java/Home/ ]; then
-  export JAVA_HOME=/Library/Java/Home/
-  export PATH=$JAVA_HOME/bin:$PATH
-fi
+# if [ -d /Library/Java/Home/ ]; then
+#   export JAVA_HOME=/Library/Java/Home/
+#   export PATH=$JAVA_HOME/bin:$PATH
+# fi
 # }
 
