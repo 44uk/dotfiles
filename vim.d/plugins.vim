@@ -87,13 +87,12 @@ if s:use_dein && v:version >= 704
 
     call dein#add('scrooloose/syntastic')
 
-    call dein#add('tpope/vim-fugitive')
-    call dein#add('tpope/vim-endwise')
+    " call dein#add('tpope/vim-fugitive')
     call dein#add('Townk/vim-autoclose')
 
     call dein#add('itchyny/lightline.vim')
-    " call dein#add()
-    " call dein#add()
+
+    call dein#add('szw/vim-tags')
     " call dein#add()
     " call dein#add()
 
@@ -107,10 +106,11 @@ if s:use_dein && v:version >= 704
     " ## ruby on rails plugins
     call dein#add('tpope/vim-rails')
     call dein#add('tpope/vim-bundler')
+    call dein#add('tpope/vim-endwise')
     call dein#add('vim-ruby/vim-ruby', {'on_ft': 'ruby'})
     call dein#add('todesking/ruby_hl_lvar.vim', {'on_ft': 'ruby'})
     call dein#add('slim-template/vim-slim')
-    call dein#add('stephpy/vim-yaml')
+    call dein#add('chase/vim-ansible-yaml')
     " call dein#add()
 
     " ## php plugins
@@ -128,6 +128,7 @@ if s:use_dein && v:version >= 704
     " ## colorschemes
     call dein#add('tomasr/molokai')
     call dein#add('sjl/badwolf')
+    call dein#add('cocopon/iceberg.vim')
     " call dein#add()
 
 

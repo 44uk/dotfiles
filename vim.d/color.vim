@@ -1,3 +1,4 @@
 "colorscheme molokai
-colorscheme badwolf
+" colorscheme badwolf
+colorscheme iceberg
 syntax on
