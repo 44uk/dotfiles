@@ -113,6 +113,9 @@ if s:use_dein && v:version >= 704
     call dein#add('chase/vim-ansible-yaml')
     " call dein#add()
 
+    " ## elixir plugins
+    call dein#add('elixir-lang/vim-elixir')
+
     " ## php plugins
     " call dein#add('stanangeloff/php.vim')
     " call dein#add('dsawardekar/wordpress.vim')
