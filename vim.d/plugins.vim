@@ -67,13 +67,14 @@ if s:use_dein && v:version >= 704
 
     call dein#add('tyru/caw.vim')
 
-    call dein#add('Yggdroot/indentLine')
+    " call dein#add('Yggdroot/indentLine')
+    call dein#add('nathanaelkane/vim-indent-guides')
 
     call dein#add('mhinz/vim-startify')
 
-    call dein#add('thinca/vim-quickrun', {'lazy': 1})
+    call dein#add('thinca/vim-quickrun')
 
-    call dein#add('mattn/emmet-vim', {'lazy': 1})
+    call dein#add('mattn/emmet-vim')
 
     call dein#add('airblade/vim-gitgutter')
 
@@ -121,20 +122,24 @@ if s:use_dein && v:version >= 704
     " call dein#add('dsawardekar/wordpress.vim')
     " call dein#add()
     " call dein#add()
+    "
+
+    " ## markdown plugins
+    call dein#add('plasticboy/vim-markdown')
 
     " ## misc plugins
     call dein#add('leshill/vim-json')
-    call dein#add('plasticboy/vim-markdown')
     call dein#add('chrisbra/csv.vim')
-
+    call dein#add('junegunn/vim-easy-align')
 
     " ## colorschemes
-    call dein#add('tomasr/molokai')
-    call dein#add('sjl/badwolf')
     call dein#add('cocopon/iceberg.vim')
+    call dein#add('sjl/badwolf')
+    call dein#add('tomasr/molokai')
     " call dein#add()
 
-
+    " call dein#add('vobornik/vim-mql4')
+    " call dein#add('vobornik/vim-mql4', {'on_ft': 'mq4'})
 
     " } ------------------------------------------
     call dein#end()
@@ -183,6 +188,14 @@ if s:dein_enabled && dein#tap("unite.vim")
     "  \ }
   endif
 
+  let g:indent_guides_enable_on_vim_startup = 1
+  let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
+  let g:indent_guides_auto_colors = 0
+  let g:indent_guides_guide_size = 1
+  let g:indent_guides_start_level = 2
+  autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=black
+  autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=darkgray
+
   " # lightline
   set noshowmode
   set laststatus=2
@@ -210,8 +223,8 @@ if s:dein_enabled && dein#tap("unite.vim")
   set splitright
 
   " # indentLine
-  let g:indentLine_char = '|'
-  let g:indentLine_color_term = 240
+  " let g:indentLine_char = '|'
+  " let g:indentLine_color_term = 240
   " let g:indentLine_color_gui = '#A4E57E'
   " let g:indentLine_color_tty_light = 7 " (default: 4)
   " let g:indentLine_color_dark = 1 " (default: 2)
