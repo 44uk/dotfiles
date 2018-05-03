@@ -31,8 +31,12 @@ fi
 [ -e ~/.nodebrew/current/bin/nodebrew ] && export PATH=$HOME/.nodebrew/current/bin:$PATH
 # }
 
-# pythonbrew {
-[ -e ~/.pythonbrew/etc/bashrc ] && source ~/.pythonbrew/etc/bashrc
+# pyenv {
+if [ -e ~/.pyenv ]; then
+  export PATH=$HOME/.pyenv/bin:$PATH
+  eval "$(pyenv init -)"
+  eval "$(pyenv virtualenv-init -)"
+fi
 # }
 
 # Java {
