@@ -15,3 +15,7 @@ function pyserv {
 function rbserv {
   ruby -rwebrick -e 'WEBrick::HTTPServer.new(:DocumentRoot => "./", :Port => 8100).start'
 }
+
+function reshell {
+  exec $SHELL --login
+}
