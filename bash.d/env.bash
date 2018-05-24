@@ -39,10 +39,20 @@ if [ -e ~/.pyenv ]; then
 fi
 # }
 
+# goenv {
+if [ -e ~/.goenv ]; then
+  export GOENV_ROOT="$HOME/.goenv"
+  export PATH="$GOENV_ROOT/bin:$PATH"
+  export GOPATH="$HOME/.go"
+  eval "$(goenv init -)"
+fi
+# }
+
+
+
 # Java {
 # if [ -d /Library/Java/Home/ ]; then
 #   export JAVA_HOME=/Library/Java/Home/
 #   export PATH=$JAVA_HOME/bin:$PATH
 # fi
 # }
-
