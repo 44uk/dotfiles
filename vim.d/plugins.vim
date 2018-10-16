@@ -102,6 +102,7 @@ if s:use_dein && v:version >= 704
     call dein#add('hokaccha/vim-html5validator')
     call dein#add('hail2u/vim-css3-syntax')
     call dein#add('pangloss/vim-javascript')
+    call dein#add('leafgarland/typescript-vim')
     " call dein#add()
 
     " ## ruby on rails plugins

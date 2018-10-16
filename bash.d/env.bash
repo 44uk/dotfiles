@@ -27,8 +27,15 @@ if [ -e ~/.rbenv ]; then
 fi
 # }
 
+# ndenv {
+if [ -e ~/.ndenv ]; then
+  export PATH=$HOME/.ndenv/bin:$PATH
+  eval "$(ndenv init -)"
+fi
+# }
+
 # nodebrew {
-[ -e ~/.nodebrew/current/bin/nodebrew ] && export PATH=$HOME/.nodebrew/current/bin:$PATH
+# [ -e ~/.nodebrew/current/bin/nodebrew ] && export PATH=$HOME/.nodebrew/current/bin:$PATH
 # }
 
 # pyenv {
@@ -48,7 +55,9 @@ if [ -e ~/.goenv ]; then
 fi
 # }
 
-
+# phpbrew {
+[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
+# }
 
 # Java {
 # if [ -d /Library/Java/Home/ ]; then
