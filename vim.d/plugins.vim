@@ -76,15 +76,9 @@ if s:use_dein && v:version >= 704
 
     call dein#add('mattn/emmet-vim')
 
-    call dein#add('airblade/vim-gitgutter')
-
     call dein#add('bronson/vim-trailing-whitespace')
 
-    call dein#add('rhysd/accelerated-jk')
-
     call dein#add('AndrewRadev/switch.vim')
-
-    call dein#add('editorconfig/editorconfig-vim')
 
     call dein#add('scrooloose/syntastic')
 
@@ -102,7 +96,6 @@ if s:use_dein && v:version >= 704
     call dein#add('hokaccha/vim-html5validator')
     call dein#add('hail2u/vim-css3-syntax')
     call dein#add('pangloss/vim-javascript')
-    call dein#add('leafgarland/typescript-vim')
     " call dein#add()
 
     " ## ruby on rails plugins
@@ -116,7 +109,13 @@ if s:use_dein && v:version >= 704
     " call dein#add()
 
     " ## elixir plugins
-    call dein#add('elixir-lang/vim-elixir')
+    " call dein#add('elixir-lang/vim-elixir')
+
+    " ## typescript plugins
+    call dein#add('leafgarland/typescript-vim')
+
+    " ## go plugins
+    call dein#add('fatih/vim-go')
 
     " ## php plugins
     " call dein#add('stanangeloff/php.vim')
@@ -132,6 +131,16 @@ if s:use_dein && v:version >= 704
     call dein#add('leshill/vim-json')
     call dein#add('chrisbra/csv.vim')
     call dein#add('junegunn/vim-easy-align')
+    call dein#add('easymotion/vim-easymotion')
+    call dein#add('editorconfig/editorconfig-vim')
+    call dein#add('airblade/vim-gitgutter')
+    call dein#add('rhysd/accelerated-jk')
+    " call dein#add('osyo-manga/vim-over')
+    " call dein#add('tpope/tvim-surround')
+    " call dein#add('')
+    " call dein#add('')
+    " call dein#add('')
+    " call dein#add('')
 
     " ## colorschemes
     call dein#add('cocopon/iceberg.vim')
