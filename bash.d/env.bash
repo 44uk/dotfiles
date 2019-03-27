@@ -27,15 +27,11 @@ if [ -e ~/.rbenv ]; then
 fi
 # }
 
-# ndenv {
-if [ -e ~/.ndenv ]; then
-  export PATH=$HOME/.ndenv/bin:$PATH
-  eval "$(ndenv init -)"
+# nodenv {
+if [ -e ~/.nodenv ]; then
+  export PATH=$HOME/.nodenv/bin:$PATH
+  eval "$(nodenv init -)"
 fi
-# }
-
-# nodebrew {
-# [ -e ~/.nodebrew/current/bin/nodebrew ] && export PATH=$HOME/.nodebrew/current/bin:$PATH
 # }
 
 # pyenv {
@@ -57,6 +53,12 @@ fi
 
 # phpbrew {
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
+# }
+
+# flutter {
+if [ $HOME/flutter ]; then
+  export PATH=$PATH:$HOME/flutter/bin
+fi
 # }
 
 # Java {
