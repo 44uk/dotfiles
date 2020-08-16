@@ -10,6 +10,7 @@
   quotepath=false
   whitespace = cr-at-eol
   filemode = false
+	ignorecase = false
 
 [color]
   ui=auto

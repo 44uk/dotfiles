@@ -14,8 +14,8 @@ export PATH=~/usr/local/bin:~/usr/local/sbin:~/bin:$PATH
 
 # Completion {
 if type brew > /dev/null 2>&1; then
-  if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    source $(brew --prefix)/etc/bash_completion
+  if [ -f $(brew --prefix)/etc/profile.d/bash_completion.sh ]; then
+    . $(brew --prefix)/etc/profile.d/bash_completion.sh
   fi
 fi
 # }
@@ -47,6 +47,7 @@ if [ -e ~/.goenv ]; then
   export GOENV_ROOT="$HOME/.goenv"
   export PATH="$GOENV_ROOT/bin:$PATH"
   export GOPATH="$HOME/.go"
+  export PATH="$PATH:$GOPATH/bin"
   eval "$(goenv init -)"
 fi
 # }
@@ -66,4 +67,11 @@ fi
 #   export JAVA_HOME=/Library/Java/Home/
 #   export PATH=$JAVA_HOME/bin:$PATH
 # fi
+# pyenv {
+if [ -e ~/.pyenv ]; then
+  export PYENV_ROOT="$HOME/.pyenv"
+  export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init -)"
+fi
+# }
 # }
