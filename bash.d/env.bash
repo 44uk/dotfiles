@@ -34,6 +34,13 @@ if [ -e ~/.nodenv ]; then
 fi
 # }
 
+# volta {
+if [ -e ~/.volta ]; then
+  export VOLTA_HOME=$HOME/.volta
+  export PATH=$VOLTA_HOME/bin:$PATH
+fi
+# }
+
 # pyenv {
 if [ -e ~/.pyenv ]; then
   export PATH=$HOME/.pyenv/bin:$PATH
