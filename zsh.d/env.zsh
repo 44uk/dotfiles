@@ -3,13 +3,21 @@ export PATH=~/dotfiles/bin:$PATH
 # }
 
 # Home {
-export PATH=~/usr/local/bin:~/usr/local/sbin:~/bin:$PATH
+export PATH=~/usr/local/bin:$HOME/usr/local/sbin:$HOME/bin:$PATH
 # }
 
 # rbenv {
 if [ -e ~/.rbenv ]; then
-  export PATH=$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH:$PATH
+  export PATH=$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH
   eval "$(rbenv init -)"
+fi
+# }
+
+# pyenv {
+if [ -e ~/.pyenv ]; then
+  export PATH=$HOME/.pyenv/bin:$PATH
+  eval "$(pyenv init -)"
+  eval "$(pyenv virtualenv-init -)"
 fi
 # }
 
@@ -20,10 +28,9 @@ if [ -e ~/.volta ]; then
 fi
 # }
 
-# pyenv {
-if [ -e ~/.pyenv ]; then
-  export PATH=$HOME/.pyenv/bin:$PATH
-  eval "$(pyenv init -)"
-  eval "$(pyenv virtualenv-init -)"
+# nodenv {
+if [ -e ~/.nodenv ]; then
+  export PATH=$HOME/.nodenv/bin:$PATH
+  eval "$(nodenv init -)"
 fi
 # }

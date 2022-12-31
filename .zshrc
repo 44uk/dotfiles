@@ -114,7 +114,7 @@ autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
 ### my customizations
-SCRIPT_DIR=$HOME/dotfiles
-for file in $SCRIPT_DIR/zsh.d/*.zsh; do
-  source "$file"
+DOTFILE_ROOT=$HOME/dotfiles
+for file in $DOTFILE_ROOT/zsh.d/*.zsh; do
+  source $file
 done

@@ -193,7 +193,6 @@ if s:dein_enabled && dein#tap("unite.vim")
     "  \ 'vimshell' : $HOME.'/.vimshell_hist',
     "  \ 'scheme' : $HOME.'/.gosh_completions',
     "  \ 'ruby' : $VIMDICTS . 'ruby.dict',
-    "  \ 'jquery' : $VIMDICTS . 'jquery.dict',
     "  \ }
   endif
 
