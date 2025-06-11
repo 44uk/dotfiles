@@ -4,6 +4,8 @@ DOTFILES_DIR      := $(PWD)
 DOTFILES_CONFIGS  := git
 DOTFILES_FILES    := $(filter-out $(DOTFILES_EXCLUDES), $(DOTFILES_TARGET))
 
+.PHONY: scripts
+
 scripts:
 	@$(foreach val, $(wildcard ./scripts/*_setup.sh), bash $(val);)
 
