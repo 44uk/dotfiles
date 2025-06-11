@@ -6,31 +6,11 @@ export PATH=~/dotfiles/bin:$PATH
 export PATH=~/usr/local/bin:$HOME/usr/local/sbin:$HOME/bin:$PATH
 # }
 
-# rbenv {
-if [ -e ~/.rbenv ]; then
-  export PATH=$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH
-  eval "$(rbenv init -)"
+# mise {
+if command -v mise 1>/dev/null 2>&1; then
+  eval "$(/opt/homebrew/bin/mise activate zsh)"
 fi
 # }
 
-# pyenv {
-if [ -e ~/.pyenv ]; then
-  export PATH=$HOME/.pyenv/bin:$PATH
-  eval "$(pyenv init -)"
-  eval "$(pyenv virtualenv-init -)"
-fi
-# }
-
-# volta {
-if [ -e ~/.volta ]; then
-  export VOLTA_HOME=$HOME/.volta
-  export PATH=$VOLTA_HOME/bin:$PATH
-fi
-# }
-
-# nodenv {
-if [ -e ~/.nodenv ]; then
-  export PATH=$HOME/.nodenv/bin:$PATH
-  eval "$(nodenv init -)"
-fi
-# }
+source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
+source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
